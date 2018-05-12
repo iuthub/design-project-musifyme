@@ -1,0 +1,303 @@
+ @font-face 
+{
+ font-family: Avenir Next; 
+ src: url('AvenirNextLTPro-Regular.ttf'); 
+} 
+
+	 @font-face 
+{
+ font-family: Phosphate; 
+ src: url('PhosphateInline.ttf'); 
+} 
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.navig2
+{
+	
+    
+}
+
+.navig1
+{
+	list-style-type: none;
+    overflow: hidden;
+    display: flex;
+	justify-content: space-between;
+	
+}
+
+.positionSignUp
+{
+	padding-top: 200px;
+
+}
+
+.posit
+{
+	padding-top: 10px;
+	padding-right: 13px;
+	padding-left: 10px;
+}
+.navig
+{
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+}
+
+.h:hover
+{
+	border-bottom: 0.5px solid #E88C08;
+}
+
+input[type=text] {   
+    background-color: gray; 
+    background-image: url('search-icon.png');
+    background-size:13px 13px;
+    background-position: 2px 2px; 
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+.position3
+{
+	margin-top: 35px;
+	margin-right: 
+}
+
+.Search
+{
+width:100%;
+border: none;	
+border-radius:4px;
+}
+
+::-webkit-input-placeholder {
+	color: black;
+	opacity: 1;
+	font-family: Avenir Next;
+	font-size: 12px;
+}
+:-moz-placeholder {
+	color: black;
+	opacity: 1;
+	font-family: Avenir Next;
+	font-size: 12px;
+}
+::-moz-placeholder {
+	color: black;
+	opacity: 1;
+	font-family: Avenir Next;
+	font-size: 12px;
+}
+:-ms-input-placeholder {
+	color: black;
+	opacity: 1;
+	font-family: Avenir Next;
+	font-size: 12px;
+}
+
+.txtformat1
+{
+	position: relative;
+	z-index: 1;
+	color: black;
+	font-weight: normal;
+	text-align: right;
+	text-decoration: none;
+	font-family: Avenir Next;
+	letter-spacing: 3px;
+}
+
+.txtformat2
+{
+	position: relative;
+	z-index: 1;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	font-family: Avenir Next;
+	letter-spacing: 3px;
+}
+
+.s
+{
+	font-size: 15px;
+}
+
+
+.txtformat
+{
+	color: white;
+	text-decoration: none;
+	font-family: Avenir Next;
+	font-size: 	28px;
+	text-align: right;
+	letter-spacing: 4.8px;
+	line-height: 50px;
+}
+.position1
+{
+	margin-top: 60px; 
+    margin-right: 80px;
+    margin-bottom: 200px;
+    padding-right:100px;  
+    padding-left: 112px;
+    padding-top: 25px;
+    padding-bottom: 70px;
+    display: inline-block;	
+	background-color: gray;
+  	opacity: 0.8;
+}
+.position1  > p{
+	color:black;
+	opacity: 1;
+}
+.position2
+{
+	margin-top: 60px; 
+    margin-left: 83px;
+    margin-bottom: 200px;
+    padding-left:100px;  
+    padding-right: 112px;
+    padding-top: 25px;
+    padding-bottom: 70px;
+    display: inline-block;	
+ 
+}
+.position1  > p{
+	color:black;
+	opacity: 1;
+}
+
+.position
+{
+	padding-top: 180px;	
+    /*padding-left: 767px;*/
+    /*padding-right: 83px;*/
+}
+
+li a
+{
+	color: white;
+	text-decoration: none;
+	font-family: Avenir Next;
+	font-size: 	16px;
+}
+
+.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
+
+.upper
+{
+	background-image: url(ipProjectAssets/IMG_3928.png);
+	height: 100vh;
+	background-repeat: no-repeat;	
+	background-size: cover;
+	opacity: 0.91;
+}
+
+.signUp
+{
+	background-image: url(ipProjectAssets/signUp.jpg);
+	height: 100vh;	
+	background-size: cover;	
+	background-repeat: no-repeat;
+	opacity: 0.91;
+}
+
+.rockPunk
+{
+	height: 100vh;
+	background-image: url(ipProjectAssets/Mercury.1..jpg);
+	background-size: cover;
+	background-position: center;	
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+}
+.rockPunk:before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-color: rgba(90,90,90,.4);
+	z-index: 0;
+}
+
+.hiphopRap
+{
+	height: 100vh;
+	background-image: url(ipProjectAssets/IMG_3931.png);
+	background-size: cover;
+	background-position: 50% 25%;	
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.hiphopRap:before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-color: rgba(90,90,90,.1);
+	z-index: 0;
+}
+
+.classic
+{
+	height: 100vh;
+	background-image: url(ipProjectAssets/Orchestral-52-Pic.png);
+	background-size: cover;
+	background-position: center;	
+	background-repeat: no-repeat;
+	  -webkit-filter: grayscale(80%);
+    filter: grayscale(80%);
+    display: flex;
+	justify-content: space-between;
+
+}
+
+.classic:before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-color: rgba(90,90,90,.2);
+	z-index:0;
+}
+
+.pop
+{
+	height: 100vh;
+	background-image: url(ipProjectAssets/jackson.jpg);
+	background-size: cover;
+	background-position: center;	
+	background-repeat: no-repeat;
+    display: flex;
+	justify-content: space-between;
+
+}
+
+.pop:before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-color: rgba(90,90,90,.4);
+	z-index:0;
+}
+.footer
+{
+	background-color: black;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+
+}

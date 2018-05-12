@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<title>Sign Up</title>
+</head>
+<body> 
+<link rel="stylesheet" type="text/css" href="view.css">
+<link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+<script>
+  function scrollWin (id){
+    var offset = 0;
+    $('html, body').animate({
+    scrollTop: $(id).offset ().top - offset}, 500);
+  return false;
+  }
+</script>
+
+<header>
+<!-- #7a6d76 -->
+
+<div class="navig2" style="background-color:rgba(220,220,220,0.6);">
+<ul class = "navig1">
+  <li class="navig"><img src="ipProjectAssets/musifyme.png" alt = "logo" height="25"></li>
+  <li class="navig h"><a href="#About" >About</a></li>
+  <li class="navig h" ><a href="#Genre" >Genre</a></li>
+  <li class="navig h"><a href="#Album" >Album</a></li>
+  <li class="navig h"><a href="#Artist">Artist</a></li>
+  <li class="navig h" style="border-bottom: 0.5px solid #E88C08;" ><a href="#Sign_in">Sign in</a></li>
+  <li class="navig" style="margin-right: 68px;">
+    <form action="/action_page.php">
+      <input type="text" placeholder=" Search..." name="search" class = "Search" >
+    </form>
+  </li>
+</ul>
+</div>
+<div class="signUp">
+<div class="txtformat position">
+<p>Discover a large set of<br></p>
+<p>Genres with</p>
+<img src="ipProjectAssets/musifyme.png" alt = "logo" height="25">
+<hr>
+<p style="text-align: center; line-height: 100px">Swipe to start</p>
+<!-- <br> -->
+<!-- <button onclick="scrollWin()" style = "padding-right: 180px;">
+<img src ="ipProjectAssets/arrowSwipe.png"/>
+</button> -->
+<a href="javascript://0" onclick="scrollWin('#more')"><img src="ipProjectAssets/arrowSwipe.png"  style ="padding-right: 180px;"></a>
+
+</div>
+</div>
