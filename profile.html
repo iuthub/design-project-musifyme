@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<title>Profile</title>
+</head>
+<body> 
+<link rel="stylesheet" type="text/css" href="view.css">
+<link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+<script>
+  function scrollWin (id){
+    var offset = 0;
+    $('html, body').animate({
+    scrollTop: $(id).offset ().top - offset}, 500);
+  return false;
+  }
+</script>
+
+<header>
+<!-- #7a6d76 -->
+<!-- style="background-color:#2B2A2F  " -->
+
+<div class="navig2" style="background-color: rgba(105, 105, 105, 0.6);">
+<ul class = "navig1">
+  <li class="navig"><img src="ipProjectAssets/musifyme.png" alt = "logo" height="25"></li>
+  <li class="navig h"><a href="#About" >About</a></li>
+  <li class="navig h"><a href="#Genre" >Genre</a></li>
+  <li class="navig h"><a href="#Album" >Album</a></li>
+  <li class="navig h"><a href="#Artist">Artist</a></li>
+  <li class="navig h" style="border-bottom: 0.5px solid #E88C08;"><a href="#Sign_in">Sign in</a></li>
+  <li class="navig" style="padding-right: 98px;">
+    <form><action="/action_page.php">
+      <input type="text" id="mysearch" placeholder=" Search..." name= "search" class = "Search" >
+    </form>
+  </li>
+</div>
+
+<div class="profile">
+
+ <div><img src="ipProjectAssets/Bitmap.png" height ="381" width="364" style="font-size: 28px; padding-top:85px;padding-left:50px;"></div>
+ <div class = "txtformat" style="padding-top: 100px;  text-align: left;">
+  <p>Jeremy Paulsen</p><hr>
+  <p>18 years old</p>
+  <p>Brooklyn, NY, USA</p> 
+</div>
+  <div class = "txtformat">
+    <p style="padding-top: 100px; padding-right: 220px;">Playlist <img src="ipProjectAssets/trgle.png" height="35" width="35" style="padding-top: 5px;"></p>
+  </div>
+</div>
+</header>
+
+<footer class="footer">  
+<div class="txtformat2 posit" style="font-size: 14px;">  
+<p class="navig" style="border-bottom: 0.25px solid white;">About</p>
+<p class="s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+</div>
+<div class="txtformat2 posit">
+  <p class="navig" style="border-bottom: 0.25px solid white; font-size:">Home</p>
+<p class="s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+</div>
+<div class="txtformat2 posit">
+  <p class="navig posit" style="border-bottom: 0.25px solid white;">Contacs</p>
+  <p class="s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+</div>
+<div class="txtformat2 posit">
+  <img src="ipProjectAssets/musifyme.png" alt = "logo" height="30">
+</div>
+</footer>
+
+
