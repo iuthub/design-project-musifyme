@@ -1,0 +1,393 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.container{
+    margin-left: 5%;
+    position: absolute;
+    transform: translate(-20%);
+    margin-top: 0px;
+    width: 10px;
+    height: 10px;
+    padding-top: 0;
+    margin-top: -1%;
+}
+
+.search-box input{
+
+    border: none;
+    background: none;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    transition: all .25s ease-in .25s;
+    color: transparent;
+    font-size: 14px;
+    font-family: "Copperplate";
+    line-height: 21px;
+}
+
+.search-box input:hover{
+    cursor: pointer;
+}
+
+.search-box input:hover:focus{
+    cursor: text;
+}
+
+.search-box input:hover + span{
+    background-color: rgba(120,120,120,0.2);
+}
+
+.search-box input:focus{
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+    color: black;
+    background: none;
+    color: #333;
+}
+
+.search-box input + span{
+    width: 200px;
+}
+
+.search-box input:focus + span{
+    width: 200px;
+}
+
+.search-box input:focus + span:before{
+    width: 2px;
+    opacity: 0;
+    transition: all 0.25s ease-in;
+}
+
+.search-box input + span{
+    z-index: -1;
+    position: absolute;
+    border: 2px solid #333;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    transition: all 0.25s ease-in 0.25s;
+    border-radius: 25px;
+    left: 0;
+}
+
+.search-box input + span::before{
+    transition: all 0.25s ease-in 0.25s;
+    transform-origin: left top;
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 5px;
+    border-radius: 5px;
+    background: #333;
+    transform: rotate(45deg) translate(21px, -2px);
+
+}
+
+.navigationBar{
+    z-index: 999999;
+    position: fixed;
+    background-color: rgba(255,255,255,0.75);
+    width: 100vw;
+    height: 75px;
+    margin: 0px;
+}
+.navigationBar ul{
+    position: -webkit-sticky;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 65px;
+}
+
+.navigationBar ul li{
+    /*float: left;*/
+    display: inline-block;
+}
+
+.navigationBar:hover li{
+    font-style: normal;
+    font-family: "Copperplate" sans-serif;
+}
+
+.navigationBar li a{
+    font-family: "Copperplate";
+    display: block;
+    color: rgba(74,74,74,1);
+    text-align: center;
+    font-size: 18px;
+    padding: 25px 65px;
+    text-decoration: none;
+}
+
+.navigationBar li a:active{
+    color: rgba(98, 112, 170, 1);
+}
+
+.navigationBar .musifyme a{
+    margin: 0px;
+    font-family: "Avenir Next";
+    display: block;
+    color: rgba(74,74,74,1);
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+    padding-top: 15px;
+    padding-right: 170px;
+    padding-left: 55px;
+    text-decoration: none;
+}
+
+
+.navigationBar .lists a:hover{
+    color: rgba(98, 112, 170, 1);
+}
+
+.navigationBar .musifyme a:hover{
+    color: rgba(98, 112, 170, 1);
+    opacity: 1;
+}
+
+.first_imageBack{
+	height: 100%;
+}
+
+.hiphop_main{
+	padding-top: 10%;
+	float: right;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.hiphop_main .main img{
+	position: relative;
+	border-color: rgba(74,74,74,0.15);
+	border-width: 1px;
+	border-style: solid;
+}
+
+#second_imageBack{
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: -webkit-sticky;
+	background-image: url("http://music.me/public/images/secondImageBG.png");
+	background-color: black;
+	background-repeat: no-repeat;
+}
+
+#second_imageBack .playVideoHipHop{
+	float: right;
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+	width: 850px;
+	height: 100%;
+}
+
+#second_imageBack .leftSide{
+	float: left;
+	padding-left: 8%;
+	position: absolute;
+	bottom: 8%;
+	color: white;
+	font-family: "Phosphate";
+	font-size: 65px;
+	font-weight: 400px;
+}
+
+
+.playVideoHipHop p{
+	float: right; 
+	padding-right: 8%;
+	padding-top: 8%;
+	color: white;
+	font-family: "Phosphate";
+	font-size: 65px;
+	font-weight: 400px;
+	opacity: 0.73;
+	text-align: right;
+}
+
+.playVideoHipHop .btnVideoPlay{
+	opacity: 0.23;
+	background-color: black;
+	border-style: none;
+	width: 144px;
+	height: 144px;
+	clear: both;
+	position: absolute;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 60%;
+
+}
+
+.playVideoHipHop .btnVideoPlay p{
+	color: white;
+	font-size: 31px;
+	font-family: "Phosphate";
+	text-align: center;
+	opacity: 1;
+}
+
+.third_imageBack{
+	/*background-image: url("third_imageBack_hiphop.png");*/
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+#albums{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+.tableView{
+	opacity: 1;
+	position: absolute;
+	padding-left: 50px;
+	padding-top: 0px;
+	margin-top: 0px;
+	border-spacing: 2em;
+	overflow: scroll;
+}
+
+.tableView button{
+	border-style: none;
+	border-color: white;
+	background-color: white;
+}
+
+.tableView button:hover{
+	background-color: rgba(98, 112, 170, 0.1);
+}
+
+.table_View{
+	margin: 0;
+	padding-left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.Track{
+
+	padding-top: 45px;
+	font-family: "Phosphate";
+	font-size: 45px;
+	color: black;
+	margin-bottom: 0px;
+	padding-left: 10%;
+}
+
+.Track a{
+	color: #333;
+	text-decoration: none;
+}
+
+.Track a:hover{
+	color: rgba(98, 112, 170, 1);
+}
+
+.leftSideMain{
+	padding-left: 75px;
+	padding-top: 4%;
+	float: left;
+	margin: 100px;
+}
+
+.leftSideMain table{
+	border-spacing: 40px;
+}
+
+.leftSideMain td{
+	background-color: #333;
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
+	text-align: center;
+	color: white;
+	font-family: "Copperplate";
+	font-weight: 750;
+
+}
+#explore{
+	padding-top: 10%;
+	padding-left: 10%;
+}
+
+#explore p a{
+
+	font-family: "Copperplate";
+	font-size: 21px;
+	color: #333;
+	text-decoration: none;
+	text-decoration-color: none;
+}
+
+.footer{
+	position: absolute;
+	width: 100%;
+	background-color: black;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	color: white;
+}
+
+.footer .about{
+	float: left; 
+	width: 15%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	padding-left: 10%;
+}
+
+.footer .about h2{
+	font-family: "Avenir Next";
+	text-align: center;
+	font-weight: 600;
+}
+
+.footer .about p{
+	text-align: justify;
+	font-family: "Avenir Next";
+	font-weight: 450;
+}
+.footer .about .links a{
+	text-align: justify;
+	font-size: 18px;
+	font-family: "Avenir Next";
+	font-weight: 450;
+	font-style: normal;
+	color: white;
+	text-decoration: none;
+}
+
+.musi{
+    font-family: "Avenir Next";
+    display: block;
+    color: rgba(98, 112, 170, 1);
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.8px;
+    font-weight: 10;
+    text-decoration: none;
+}
+
+@media(max-width: 762px){
+	.navigationBar ul li{
+		display: block;
+	}
+
+}
+

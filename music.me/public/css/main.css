@@ -1,0 +1,25 @@
+#exampleModalCenter img{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.modal-header .close {
+    margin-top: -20px;
+}
+
+.container h2{
+    text-align: center;
+}
+
+img.img_edit{
+    width: 100%;
+}
+
+.editArtist img.img_edit{
+    width: 50%;
+}
+
+img.adminImg{
+    height: 225px;
+}
